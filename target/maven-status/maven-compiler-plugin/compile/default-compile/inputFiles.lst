@@ -1,0 +1,11 @@
+/Users/letargico/java/src/user-registration-api/src/main/java/com/myapp/user_registration_api/UserRegistrationApiApplication.java
+/Users/letargico/java/src/user-registration-api/src/main/java/com/myapp/user_registration_api/config/SwaggerConfig.java
+/Users/letargico/java/src/user-registration-api/src/main/java/com/myapp/user_registration_api/controller/UserController.java
+/Users/letargico/java/src/user-registration-api/src/main/java/com/myapp/user_registration_api/domain/User.java
+/Users/letargico/java/src/user-registration-api/src/main/java/com/myapp/user_registration_api/models/PhoneDTO.java
+/Users/letargico/java/src/user-registration-api/src/main/java/com/myapp/user_registration_api/models/UserDTO.java
+/Users/letargico/java/src/user-registration-api/src/main/java/com/myapp/user_registration_api/models/UserResponse.java
+/Users/letargico/java/src/user-registration-api/src/main/java/com/myapp/user_registration_api/repository/UserRepository.java
+/Users/letargico/java/src/user-registration-api/src/main/java/com/myapp/user_registration_api/services/UserService.java
+/Users/letargico/java/src/user-registration-api/src/main/java/com/myapp/user_registration_api/services/impl/UserServiceImpl.java
+/Users/letargico/java/src/user-registration-api/src/main/java/com/myapp/user_registration_api/utils/AppConfig.java

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.myapp.user_registration_api.UserRegistrationApiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.139 s -- in com.myapp.user_registration_api.UserRegistrationApiApplicationTests

@@ -1,0 +1,12 @@
+com/myapp/user_registration_api/models/UserResponse$UserResponseBuilder.class
+com/myapp/user_registration_api/domain/User$UserBuilder.class
+com/myapp/user_registration_api/utils/AppConfig.class
+com/myapp/user_registration_api/models/UserDTO.class
+com/myapp/user_registration_api/services/UserService.class
+com/myapp/user_registration_api/domain/User.class
+com/myapp/user_registration_api/models/UserResponse.class
+com/myapp/user_registration_api/controller/UserController.class
+com/myapp/user_registration_api/repository/UserRepository.class
+com/myapp/user_registration_api/UserRegistrationApiApplication.class
+com/myapp/user_registration_api/services/impl/UserServiceImpl.class
+com/myapp/user_registration_api/models/PhoneDTO.class
