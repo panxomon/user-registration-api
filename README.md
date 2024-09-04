@@ -69,6 +69,33 @@ curl --location 'http://localhost:8080/api/users/' \
     }
 ```
 
+## H2 Database Console
+
+Este proyecto utiliza una base de datos H2 en memoria para propósitos de desarrollo y pruebas. Puedes acceder a la consola de administración de la base de datos H2 para visualizar y manipular los datos directamente.
+
+### Acceso a la consola H2
+
+La consola de administración de H2 está disponible en la siguiente URL:
+
+[http://localhost:8080/h2-console/login.jsp](http://localhost:8080/h2-console/login.jsp)
+
+### Detalles de conexión
+
+Utiliza las siguientes credenciales para acceder a la base de datos:
+
+- **JDBC URL:** `jdbc:h2:mem:testdb`
+- **Usuario:** `sa`
+- **Contraseña:** `password`
+
+### Instrucciones
+
+1. Abre la URL en tu navegador.
+2. Introduce los detalles de conexión proporcionados.
+3. Haz clic en "Conectar" para acceder a la consola y comenzar a explorar la base de datos.
+
+**Nota:** La base de datos H2 es una base de datos en memoria, lo que significa que todos los datos se perderán cuando se detenga la aplicación.
+
+
 ## Diagrama de Secuencia
 
 Aquí está el diagrama de secuencia que ilustra el flujo del proceso de registro de usuario:

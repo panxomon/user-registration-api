@@ -19,22 +19,18 @@ public class UserServiceImpl implements UserService {
     private static final String EMAIL_REGEX = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
     private final Pattern emailPattern = Pattern.compile(EMAIL_REGEX);
     private final UserRepository repository;
-    private final AppConfig appConfig;
-    private final Pattern keyPattern;
 
-    public UserServiceImpl(UserRepository repository, AppConfig appConfig) {
+    public UserServiceImpl(UserRepository repository) {
         this.repository = repository;
-        this.appConfig = appConfig;
-
-        String regex = appConfig.getKeyValidationRegex();
-        if (regex == null || regex.isEmpty()) {
-            throw new IllegalArgumentException("Invalid regex pattern");
-        }
-        this.keyPattern = Pattern.compile(regex);
     }
 
-    public UserResponse Register(UserDTO userDTO) {
+    public UserResponse Register(UserDTO userDTO, String keyValidationRegex) {
 
+        if (keyValidationRegex == null || keyValidationRegex.isEmpty()) {
+            throw new IllegalArgumentException("El patrón de validación de la clave no puede estar vacío");
+        }
+
+        Pattern keyPattern = Pattern.compile(keyValidationRegex);
         var matcher = keyPattern.matcher(userDTO.getPassword());
         if (!matcher.matches()) {
             throw new IllegalArgumentException("La clave no cumple con el formato requerido");
@@ -47,7 +43,6 @@ public class UserServiceImpl implements UserService {
         if (existingUser.isPresent()) {
             throw new IllegalArgumentException("El correo ya se encuentra registrado");
         }
-
         
         var user = repository.save(User.builder()
                 .name(userDTO.getName())
